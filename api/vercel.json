@@ -1,7 +1,13 @@
 {
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
   "crons": [
     {
-      "path": "/api/webhook",
+      "path": "/webhook.js",
       "schedule": "0 22 * * *"
     }
   ]
